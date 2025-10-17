@@ -1103,3 +1103,49 @@ body {
   transform: translateY(-2px);
   box-shadow: 0 0 40px rgba(59, 130, 246, 0.6);
 }
+
+table{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-size: 2rem;
+  border-collapse: collapse;
+  box-shadow:  0 0 20px #3b83f666;
+  background-color: #0f182828;
+  text-align: left;
+  margin-left: 15rem;
+  margin-right: 15rem;
+}
+
+thead{
+  background-color: #09101c;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+tfoot{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+
+
+tbody{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+th{
+  padding: 1rem 2rem;
+  letter-spacing: 0.1rem;
+}
+
+td{
+  padding: 1rem 2rem;
+}
+
+tr:nth-child(even){
+    background-color: #19253adf;
+}
