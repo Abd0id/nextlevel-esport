@@ -110,7 +110,7 @@ body {
 .hero-bg {
   position: absolute;
   inset: 0;
-  background-image: url("/placeholder.svg?height=1080&width=1920");
+  background-image: url("public/esports-event.png");
   background-size: cover;
   background-position: center;
   filter: brightness(0.3);
@@ -295,7 +295,7 @@ body {
 
 .tournament-card {
   background: rgba(15, 15, 25, 0.8);
-  border: 1px solid rgba(59, 130, 246, 0.2);
+  border: 1px solid rgba(54, 95, 162, 0.2);
   border-radius: 1rem;
   overflow: hidden;
   transition: all 0.3s ease;
@@ -306,11 +306,25 @@ body {
   border-color: rgba(59, 130, 246, 0.5);
   box-shadow: 0 20px 40px rgba(59, 130, 246, 0.2);
 }
+.tournament-card.special-card:hover {
+  transform: translateY(-8px);
+  border-color: rgba(168, 59, 246, 0.5);
+  box-shadow: 0 20px 50px rgba(159, 59, 246, 0.299);
+}
+.tournament-card.ad-card:hover {
+  transform: translateY(-8px);
+  border-color: rgba(59, 246, 174, 0.5);
+  box-shadow: 0 20px 50px rgba(59, 246, 215, 0.299);
+}
 
 .tournament-image {
   position: relative;
   height: 200px;
   overflow: hidden;
+}
+
+.tournament-image.player {
+  height: 400px;
 }
 
 .tournament-image img {
@@ -347,6 +361,18 @@ body {
   color: #ffffff;
 }
 
+.tournament-badge.advert {
+  background: rgba(59, 246, 243, 0.668);
+  color: #ffffff;
+  animation: pulse 3s infinite;
+}
+
+.tournament-badge.special {
+  background: #9065f5e3;
+  color: white;
+  animation: pulse 4s infinite;
+}
+
 .tournament-content {
   padding: 1.5rem;
 }
@@ -363,6 +389,12 @@ body {
   font-weight: 700;
   color: #3b82f6;
   text-transform: uppercase;
+}
+.tournament-game.special-game {
+  color: #9c3bf6;
+}
+.tournament-game.ad-game {
+  color: #3bf69c;
 }
 
 .tournament-date {
@@ -407,6 +439,13 @@ body {
   color: #3b82f6;
 }
 
+.info-icon.special-icon {
+  color: #803bf6;
+}
+
+.info-icon.ad-icon {
+  color: #3bf6c4;
+}
 .tournament-button {
   display: block;
   width: 100%;
@@ -425,6 +464,46 @@ body {
   background: rgba(59, 130, 246, 0.2);
   border-color: rgba(59, 130, 246, 0.5);
   box-shadow: 0 0 20px rgba(59, 130, 246, 0.3);
+}
+
+.tournament-button.special-button {
+  display: block;
+  width: 100%;
+  padding: 0.875rem;
+  background: rgba(149, 59, 246, 0.1);
+  border: 1px solid rgba(131, 59, 246, 0.3);
+  color: #9f3bf6;
+  text-align: center;
+  text-decoration: none;
+  font-weight: 700;
+  border-radius: 0.5rem;
+  transition: all 0.3s ease;
+}
+
+.tournament-button.special-button:hover {
+  background: rgba(165, 59, 246, 0.2);
+  border-color: rgba(187, 59, 246, 0.5);
+  box-shadow: 0 0 20px rgba(184, 59, 246, 0.3);
+}
+
+.tournament-button.ad-button {
+  display: block;
+  width: 100%;
+  padding: 0.875rem;
+  background: rgba(59, 246, 178, 0.1);
+  border: 1px solid rgba(59, 246, 196, 0.3);
+  color: #3bf69f;
+  text-align: center;
+  text-decoration: none;
+  font-weight: 700;
+  border-radius: 0.5rem;
+  transition: all 0.3s ease;
+}
+
+.tournament-button.ad-button:hover {
+  background: rgba(59, 246, 227, 0.2);
+  border-color: rgba(59, 246, 218, 0.5);
+  box-shadow: 0 0 20px rgba(59, 237, 246, 0.3);
 }
 
 /* Teams Grid */
@@ -481,6 +560,88 @@ body {
   width: 100%;
   height: 100%;
   object-fit: cover;
+}
+
+.profile-banner {
+  border-top-right-radius: 1rem;
+  border-top-left-radius: 1rem;
+  background: url(public/fnatic-banner.png);
+  background-size: cover;
+}
+.profile-card {
+  padding: 2rem;
+  border-radius: inherit;
+  position: relative;
+  background: rgba(15, 15, 25, 0.8);
+  border: 1px solid rgba(59, 130, 246, 0.2);
+  margin-bottom: -5.6rem;
+}
+.profile-logo {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 3px solid rgba(59, 130, 246, 0.3);
+  box-shadow: 0 0 30px rgba(59, 130, 246, 0.3);
+  margin-bottom: 1rem;
+}
+
+.profile-logo img {
+  background: rgba(15, 15, 25, 0.671);
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.profile-name {
+  font-family: "Orbitron", sans-serif;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #ffffff;
+  margin-bottom: 0.5rem;
+}
+
+.profile-game {
+  font-size: 0.875rem;
+  color: #a0a0a0;
+  margin-bottom: 1.5rem;
+}
+
+.recently-played {
+  font-family: "Orbitron", sans-serif;
+  font-size: 1.3rem;
+  font-weight: 400;
+  color: #ffffff;
+  margin-bottom: 0.5rem;
+  position: relative;
+  left: 20rem;
+  bottom: 15rem;
+}
+
+.recant-game{
+  height: 5rem;
+  width: auto;
+  position: relative;
+  justify-content: space-between;
+  top: 7rem;
+  right: 10rem;
+}
+
+.progress {
+  width: 50rem;
+  height: 1rem;
+  background-color: #3b83f666;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: inset 0 0 5px #0a0a0f;
+}
+
+.progress-fill {
+  height: 100%;
+  width: 0;
+  background: linear-gradient(90deg, #3b82f6, #60a5fa);
+  border-radius: inherit;
+  box-shadow: 0 0 10px #3b82f6;
 }
 
 .team-name {
@@ -651,7 +812,11 @@ body {
 }
 
 .newsletter-card {
-  background: linear-gradient(135deg, rgba(59, 130, 246, 0.1) 0%, rgba(139, 92, 246, 0.1) 100%);
+  background: linear-gradient(
+    135deg,
+    rgba(59, 130, 246, 0.1) 0%,
+    rgba(139, 92, 246, 0.1) 100%
+  );
   border: 1px solid rgba(59, 130, 246, 0.3);
   border-radius: 1.5rem;
   padding: 3rem;
@@ -659,6 +824,17 @@ body {
 }
 
 .newsletter-title {
+  font-family: "Orbitron", sans-serif;
+  font-size: 2.5rem;
+  font-weight: 800;
+  color: #ffffff;
+  margin-bottom: 1rem;
+}
+
+.newsletter-page {
+  display: flex;
+  align-items: center;
+  margin-top: 6rem;
   font-family: "Orbitron", sans-serif;
   font-size: 2.5rem;
   font-weight: 800;
@@ -733,7 +909,7 @@ body {
 
 .footer-content {
   display: grid;
-  grid-template-columns: 2fr 1fr 1fr 1fr;
+  grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
   gap: 3rem;
   margin-bottom: 3rem;
 }
@@ -747,7 +923,6 @@ body {
   margin: 1.5rem 0;
   line-height: 1.6;
 }
-
 .social-links {
   display: flex;
   gap: 1rem;
@@ -798,6 +973,11 @@ body {
   color: #a0a0a0;
   text-decoration: none;
   transition: color 0.3s ease;
+}
+
+.footer-links {
+  display: flex;
+  justify-content: space-between;
 }
 
 .footer-link:hover {
@@ -862,4 +1042,64 @@ body {
   .footer-content {
     grid-template-columns: 1fr;
   }
+}
+
+
+.Block {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.Contact-block {
+  width: 600px;
+  height: 245px;
+  display: flex;
+  flex-direction: column;
+  gap: 54px;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.blocking {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.input-contact {
+  height: 244px;
+  width: 600px;
+  padding: 25px 17px;
+  background: rgba(15, 15, 25, 0.8);
+  border: 1px solid rgba(59, 130, 246, 0.3);
+  border-radius: 8px;
+  color: #ffffff;
+  font-size: 1rem;
+  outline: none;
+  transition: all 0.3s ease;
+}
+
+.btnS {
+  width: 410px;
+  height: 55px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.75rem;
+  padding: 1rem 2rem;
+  background: linear-gradient(135deg, #3b82f6 0%, #8b5cf6 100%);
+  color: #ffffff;
+  border: none;
+  font-weight: 700;
+  font-size: 1rem;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 0 30px rgba(59, 130, 246, 0.4);
+}
+
+.btnS:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 0 40px rgba(59, 130, 246, 0.6);
 }

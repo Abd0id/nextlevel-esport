@@ -3,9 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>NextLevel E-Sport - Rejoignez la compétition</title>
+    <title>Phoenix Rising</title>
     <link rel="stylesheet" href="styles.css" />
-    0
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -14,7 +13,7 @@
     />
   </head>
   <body>
-    Hello!
+    oh!
     <header class="header">
       <div class="container">
         <div class="header-content">
@@ -33,61 +32,116 @@
         </div>
       </div>
     </header>
-
-    <!-- Hero Section  -->
-    <section class="hero">
-      <div class="hero-bg"></div>
-      <div class="hero-overlay"></div>
-      <div class="container hero-container">
-        <div class="hero-content">
-          <div class="hero-badge">
-            <span class="badge-dot"></span>
-            <span>Saison 2025 en cours</span>
-          </div>
-          <h1 class="hero-title">
-            Rejoignez la<br />
-            <span class="hero-title-gradient">Compétition</span>
-          </h1>
-          <p class="hero-description">
-            Affrontez les meilleurs joueurs, participez à des tournois épiques
-            et devenez une légende de l'e-sport.
+    <!-- Teams Section  -->
+    <section id="teams" class="section section-dark">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">Équipe profile</h2>
+          <p class="section-description">
+            Le meilleure équipe de la plateforme
           </p>
-          <a href="tournaments.html" class="hero-button">
-            <span>Découvrir les tournois</span>
-            <svg
-              class="button-icon"
-              fill="none"
-              stroke="currentColor"
-              viewBox="0 0 24 24"
-            >
-              <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="2"
-                d="M13 7l5 5m0 0l-5 5m5-5H6"
-              ></path>
-            </svg>
-          </a>
-          <div class="hero-stats">
-            <div class="stat-item">
-              <div class="stat-value">50K+</div>
-              <div class="stat-label">Joueurs actifs</div>
+        </div>
+          <div class="profile-banner">
+          <div class="profile-card">
+            <div class="team-rank">
+              <span class="rank-number">#1</span>
             </div>
-            <div class="stat-divider"></div>
-            <div class="stat-item">
-              <div class="stat-value">200+</div>
-              <div class="stat-label">Tournois</div>
+            <div class="profile-logo">
+              <img
+                src="public/fnatic.png"
+                alt="Fnatic"
+              />
             </div>
-            <div class="stat-divider"></div>
-            <div class="stat-item">
-              <div class="stat-value">$2M+</div>
-              <div class="stat-label">Prize Pool</div>
+            <h3 class="profile-name">Fnatic</h3>
+            <p class="profile-game">Valorant • EU</p>
+          </div>
+          <div class="recently-played">Recantaly played
+            <img class="recant-game" src="public/valorant.png" alt="valorant">
+            <img class="recant-game" src="public/league-of-legends.png" alt="valorant">
+            <img class="recant-game" src="public/rocket-league.png" alt="valorant">
+          </div>
+          </div>
+          <div>
+            <div class="team-stats">
+              <div class="team-stat">
+                <span class="stat-label">Victoires</span>
+                <span class="stat-value">127</span>
+              </div>
+              <div class="team-stat">
+                <span class="stat-label">Taux de victoire</span>
+                <span class="stat-value">78%</span>
+                <div class="progress">
+                <div class="progress-fill" style="width: 78%;"></div>
+                </div>
+              </div>
+            </div>
+        </div>
+    </section>
+    <section class="container">
+      <h2 class="newsletter-title">Top #3</h2>
+      <div class="tournaments-grid">
+          <!-- Tournament Card special -->
+          <div class="tournament-card special-card">
+            <div class="tournament-image player">
+              <img
+                src="public/crashies.png"
+                alt="biggest E-sports event"
+              />
+              <div class="team-rank">#1</div>
+            </div>
+            <div class="tournament-content">
+              <div class="tournament-meta">
+                <span class="tournament-game special-game">Valorant</span>
+                <span class="tournament-date">15 jan 2026</span>
+              </div>
+              <h3 class="tournament-title">Crashies</h3>
+              <p class="tournament-description">
+                le plus grand événement e-sport
+              </p>
             </div>
           </div>
-        </div>
+          <!-- Tournament Card 1 -->
+          <div class="tournament-card">
+            <div class="tournament-image player">
+              <img
+                src="public/boaster.png"
+                alt="Valorant Championship"
+              />
+              <div class="team-rank">#2</div>
+            </div>
+            <div class="tournament-content">
+              <div class="tournament-meta">
+                <span class="tournament-game">Valorant</span>
+                <span class="tournament-date">15 Oct 2025</span>
+              </div>
+              <h3 class="tournament-title">Boaster</h3>
+              <p class="tournament-description">
+                Tournoi international avec les meilleures équipes du monde
+              </p>
+            </div>
+          </div>
+          <!-- Tournament Card 2 -->
+          <div class="tournament-card">
+            <div class="tournament-image player">
+              <img
+                src="public/kaajak.png"
+                alt="League of Legends"
+              />
+              <div class="team-rank">#3</div>
+            </div>
+            <div class="tournament-content">
+              <div class="tournament-meta">
+                <span class="tournament-game">Rocket League</span>
+                <span class="tournament-date">22 Oct 2025</span>
+              </div>
+              <h3 class="tournament-title">Kaajak</h3>
+              <p class="tournament-description">
+                La semi-finale du printemps avec les équipes régionales
+              </p>
+            </div>
+          </div>
       </div>
     </section>
-
     <!-- Newsletter Section  -->
     <section id="contact" class="newsletter-section">
       <div class="container">
